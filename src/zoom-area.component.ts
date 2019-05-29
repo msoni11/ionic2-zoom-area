@@ -6,7 +6,6 @@ import { ZoomAreaProvider } from './zoom-area.provider';
 @Component({
  selector: 'zoom-area',
  template: `
-    <ion-content>
       <div #zoomAreaRoot class="zoom" (click)="toggleZoomControls()">
         <div class="fit">
           <ng-content></ng-content>
@@ -26,7 +25,6 @@ import { ZoomAreaProvider } from './zoom-area.provider';
             <ion-icon name="md-contract"></ion-icon>
         </button>
       </ion-fab>
-    </ion-content>
 `,
  animations: [
     trigger('visibilityChanged', [
